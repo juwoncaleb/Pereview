@@ -435,12 +435,7 @@ export default function Landingpage() {
                   <img className='arrow ml-2 ' src="https://img.icons8.com/ios-filled/50/null/long-arrow-up.png"/>
                 </button>
               </div>
-              <div className='head_btn ban_btn '>
-                <button className='cta_button deploy_btn2 flex justify-center'>
-                  <p className='word'>Features</p>
-                  <img className='arrow ml-2 ' src='./arrow.png' />
-                </button>
-              </div>
+              
             </div>
           </motion.div>
         </div>

@@ -26,9 +26,7 @@ export default function Header() {
       <div className='header'>
         <div className='header_links flex justify-between'>
           <div className='flex'>
-            <img className='logo' src='./logo.png' />
-            
-
+          <p className='loogo mt-6'>PEREVIEW</p>
           </div>
           <div className='flex'>
               <p className='mt-6 ml-14'>About</p>
@@ -46,7 +44,7 @@ export default function Header() {
         </div>
       </div>
       <div className='nav_mob flex justify-between'>
-        <img className='logo' src='./logo.png' />
+      <p className='loogo mt-6'>PEREVIEW</p>
         <motion.nav
 
         >
