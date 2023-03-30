@@ -1,0 +1,675 @@
+* {
+  margin: 0;
+  border: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav_mob {
+  margin-left: 5%;
+  margin-right: 5%;
+  text-align: right;
+}
+
+.ham {
+  width: 25px;
+  margin-left: auto;
+  margin-top: 15px;
+}
+
+.header {
+  font-family: Archivo;
+  height: 70px;
+}
+
+.logo {
+  height: 65px;
+  margin-top: 5px;
+}
+
+.header_links {
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header_links {
+    margin-left: 7%;
+    margin-right: 4%;
+    font-size: 17px;
+  }
+}
+* {
+  margin: 0;
+  border: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.landingPage {
+  font-family: Archivo;
+}
+
+.hero_section {
+  margin-top: 120px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.hero_btn {
+  background-color: rgb(23, 25, 48);
+  border-radius: 40px;
+  height: 40px;
+  width: 150px;
+  padding-top: 8px;
+}
+
+.hero1 {
+  height: 600px;
+  overflow: hidden;
+  width: 960px;
+  z-index: 0;
+}
+
+.hero_text {
+  width: 40%;
+  margin-top: 40px;
+}
+
+.wallet {
+  height: 35px;
+}
+
+.hero_img {
+  width: 60%;
+}
+
+.main_button {
+  color: white;
+  font-size: 10px;
+  padding-left: 5px;
+  width: 100px;
+  border-radius: 20px;
+}
+
+.cta_button {
+  background-color: rgb(23, 25, 48);
+  color: white;
+  font-size: 15px;
+  width: 130px;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  border-radius: 40px;
+}
+
+.head_btn {
+  margin-top: 18px;
+}
+
+.arrow {
+  transform: rotate(90deg);
+  width: 28px;
+  position: relative;
+  right: 1.5px;
+  bottom: 3.4px;
+}
+
+.hero_head_text {
+  font-size: 55px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.credit {
+  font-weight: 600;
+}
+
+.visusal {
+  background-color: rgb(12, 19, 53);
+  color: rgb(255, 255, 255);
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 180px;
+  border-radius: 40px;
+}
+
+.rev {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+.deplo {
+  position: relative;
+  bottom: 35px;
+}
+
+.countdown {
+  font-size: 25px;
+  color: dodgerblue;
+}
+
+.people {
+  width: 70px;
+}
+
+.uni {
+  color: rgb(63, 138, 250);
+}
+
+.fcb {
+  background-color: rgb(12, 12, 92) !important;
+  border: 1px solid white;
+}
+
+.depo {
+  border: 1px solid white;
+}
+
+.user_text {
+  margin-left: 60px;
+  margin-top: 10px;
+}
+
+.user_text2 {
+  margin-left: 52px;
+  margin-top: 10px;
+}
+
+.user_data {
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.users {
+  font-size: 18px;
+  position: relative;
+  bottom: 10px;
+  font-weight: 600;
+}
+
+.line {
+  width: 100%;
+}
+
+.visaul_card {
+  padding: 55px;
+  border: 45px;
+}
+
+.earth {
+  width: 80px;
+}
+
+.features_content {
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 180px;
+}
+
+.feature_head {
+  color: dodgerblue;
+  font-size: 23px;
+  font-weight: 600;
+}
+
+.icon {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feature_header {
+  margin-top: 30px;
+  text-align: left;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.ban {
+  padding-top: 4%;
+}
+
+.feat {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 30px;
+  border-left: 1px solid gray;
+  margin-top: 40px;
+  padding-left: 30px;
+}
+
+.story {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.parent {
+  overflow: hidden;
+  position: relative;
+}
+
+.ban {
+  height: 250px;
+  background-color: rgb(12, 12, 92);
+  margin-top: 150px;
+  color: white;
+}
+
+.word {
+  margin-top: 1px;
+}
+
+.deploy_btn2 {
+  background-color: rgb(12, 12, 92);
+  border: 1px solid white;
+  margin-left: 50px;
+}
+
+.deploy_btn1 {
+  background-color: blue;
+  border: 1px solid white;
+}
+
+.banna {
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.footerbtn {
+  background-color: royalblue !important;
+  border: 1px white solid;
+  height: 50px;
+}
+
+.ftb {
+  background-color: rgb(12, 12, 92);
+  border: white 1px solid;
+  height: 50px;
+}
+
+.footer {
+  margin-top: 150px;
+}
+
+.footerItem {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.testimonial {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 300px;
+}
+
+.step2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.testimonal_card {
+  border-radius: 40px;
+  padding: 25px;
+  border-left: 1px solid rgb(146, 136, 136);
+}
+
+.stats {
+  justify-content: center;
+  margin-top: 0px;
+  font-size: 30px;
+  position: relative;
+  top: 20px;
+}
+
+.banner_content {
+  position: relative;
+  top: 100px;
+  font-size: 40px;
+  font-weight: 600;
+  height: 200px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.test_img {
+  border-radius: 50%;
+  height: 55px;
+}
+
+.banner {
+  margin-top: 400px;
+  height: 250px;
+  background-color: rgb(31, 31, 102);
+  color: white;
+}
+
+@media only screen and (min-width: 768px) {
+  .arrow {
+    transform: rotate(90deg);
+    width: 20px;
+    position: relative;
+    right: 1.5px;
+    margin-top: 6px;
+  }
+  .nav_mob {
+    display: none;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .arrow {
+    width: 16px !important;
+    position: relative;
+    bottom: 4px !important;
+  }
+  .word {
+    font-size: 10px;
+  }
+  .credit {
+    font-size: 10px !important;
+    position: relative;
+    bottom: 3px;
+  }
+  .cta_button {
+    width: 100px;
+    height: 30px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .wallet {
+    width: 35px;
+    height: 33px;
+    margin-top: 14px;
+  }
+  .stats {
+    justify-content: center;
+    margin-top: 0px;
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+  }
+  .hero_head_text {
+    font-size: 40px;
+    font-weight: 600;
+  }
+  .hero1 {
+    height: 500px;
+    overflow: hidden;
+    width: 760px;
+    z-index: 0;
+  }
+  .hero_btn {
+    background-color: rgb(23, 25, 48);
+    border-radius: 40px;
+    height: 40px;
+    width: 150px;
+    padding-top: 8px;
+  }
+  .credit {
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .testimonial_header {
+    margin-top: 8px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  .user_text2 {
+    margin-left: 32px;
+    margin-top: 10px;
+  }
+  .feature_subText {
+    font-size: 14px;
+  }
+  .features_content {
+    margin-left: 7%;
+    margin-right: 7%;
+    padding-top: 200px;
+  }
+  .rev {
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .people {
+    width: 60px;
+    height: 60px;
+  }
+  .users {
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    bottom: 10px;
+  }
+  .user_data {
+    font-size: 12px;
+    margin-top: 2px;
+  }
+  .earth {
+    width: 60px;
+    height: 60px;
+  }
+  .visaul_card {
+    padding: 18px;
+    border: 45px;
+  }
+  .visusal {
+    background-color: rgb(12, 19, 53);
+    color: rgb(255, 255, 255);
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    border-radius: 40px;
+  }
+  .visual_mage {
+    margin-top: 155px;
+  }
+  .user_text {
+    margin-left: 30px;
+    margin-top: 10px;
+  }
+  .testimonal_sub {
+    font-size: 14px;
+  }
+  .story {
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .story_head {
+    margin-top: 50px;
+  }
+  .banner_button {
+    margin-top: 10px;
+  }
+  .footerbtn {
+    background-color: royalblue !important;
+    border: 1px white solid;
+    height: 45px;
+  }
+  .ftb {
+    background-color: rgb(12, 12, 92);
+    border: white 1px solid;
+  }
+}
+@media only screen and (max-width: 375px) {
+  .wallet {
+    margin-top: 11px;
+  }
+  .credit {
+    margin-top: 2px;
+  }
+  .btn_text {
+    font-size: 8px;
+    margin-top: 9px;
+  }
+  .arrow {
+    width: 10px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .credit {
+    margin-top: 20px;
+  }
+  .arrow {
+    width: 20px;
+    margin-top: 5px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .header {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero_text {
+    width: 100%;
+    margin-top: 40px;
+    margin-right: 40px;
+  }
+  .hero_section {
+    display: grid;
+    margin-top: 50px;
+  }
+  .cta {
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .hero_img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .feature_header {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .feat {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    flex-direction: column;
+    text-align: left;
+    padding-top: 10px;
+    border-left: 1px solid gray;
+    margin-top: 20px;
+    padding-left: 30px;
+  }
+  .visaul_card {
+    padding: 25px;
+    border: 45px;
+  }
+  .rev {
+    font-size: 27px;
+    font-weight: 700;
+    margin-top: 13px;
+  }
+  .stats {
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 35px;
+    position: relative;
+    top: 40px;
+  }
+  .cons {
+    margin-top: 30px;
+  }
+  .user_data {
+    font-size: 13px;
+    margin-top: 2px;
+  }
+  .visual_mage {
+    margin-top: 125px;
+  }
+  .visaul_card:nth-child(3) {
+    order: 3;
+    /* Move the Boost productivity card above the Growth card */
+  }
+  .visusal {
+    background-color: rgb(12, 19, 53);
+    color: rgb(255, 255, 255);
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 180px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 25px;
+    border-radius: 40px;
+  }
+  .growth {
+    margin-top: 80px;
+  }
+  .story_head {
+    margin-top: 0px;
+  }
+  .banner_button {
+    margin-top: 1px;
+    margin-bottom: 40px;
+  }
+  .banner_item {
+    margin-left: 20%;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .star {
+    height: 20px !important;
+  }
+  .feature_head {
+    color: dodgerblue;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .account_btn {
+    margin-top: 2px !important;
+  }
+  .credit {
+    margin-top: 15px;
+  }
+  .hero_section {
+    margin-top: 40px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .ftb {
+    background-color: rgb(12, 12, 92);
+    border: white 1px solid;
+    height: 28px;
+  }
+  .footerbtn {
+    background-color: royalblue !important;
+    border: 1px white solid;
+    height: 28px;
+  }
+  .stats {
+    justify-content: center;
+    font-size: 25px;
+    position: relative;
+    top: 40px;
+  }
+  .banner_item {
+    margin-left: 10%;
+  }
+  .footerItem {
+    justify-content: center;
+    text-align: center;
+  }
+  .hero1 {
+    height: 350px;
+    overflow: hidden;
+    width: 760px;
+    z-index: 0;
+  }
+  .features_content {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 130px;
+  }
+}/*# sourceMappingURL=globals.css.map */

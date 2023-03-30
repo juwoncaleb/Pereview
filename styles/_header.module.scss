@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav_mob {
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: right;
+}
+
+.ham {
+    width: 25px;
+    margin-left: auto;
+    margin-top: 15px;
+}
+
+.header {
+    font-family: Archivo;
+    height: 70px;
+}
+
+.logo {
+    height: 65px;
+    margin-top: 5px;
+}
+
+.header_links {
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 17px;
+}
+
+@media only screen and (max-width: 425px) {
+   
+    
+}
+
+
+
+
+
+
+@media only screen and (max-width: 1024px) {
+    .header_links {
+        margin-left: 7%;
+        margin-right: 4%;
+        font-size: 17px;
+    }
+
+}
