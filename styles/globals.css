@@ -42,7 +42,7 @@
   }
 }
 .newLine {
-  border: 1px solid black;
+  border: 1px solid rgb(196, 193, 193);
 }
 
 .loogo {
@@ -294,8 +294,8 @@
 }
 
 .banna {
-  margin-left: 7%;
-  margin-right: 7%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .footerbtn {
@@ -314,8 +314,17 @@
   margin-top: 150px;
 }
 
-.footerItem {
+.right {
   text-align: center;
+  font-size: 12px;
+  color: gray;
+}
+
+.footerItem {
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  color: gray;
 }
 
 .testimonial {
@@ -365,6 +374,11 @@
   color: white;
 }
 
+@media only screen and (min-width: 320px) {
+  .footerItem {
+    font-size: 12px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .feature_head {
     color: dodgerblue;

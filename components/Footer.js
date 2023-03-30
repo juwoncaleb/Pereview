@@ -5,26 +5,17 @@ export default function Footer() {
     <div>
 
       <div className='footer '>
-        <div className='grid md:grid-cols-3 lg:grid-cols-4 justify-between footerItem '>
-          <div>
-            <p className=' mb-4 md:mt-0 mt-14'>About us</p>
-
-          </div>
-          <div>
-            <p className=' mb-4 md:mt-0 mt-14'>Features</p>
-
-          </div>
-          <div>
-            <p className=' mb-4 md:mt-0 mt-14'>Privacy Policy </p>
-
-          </div>
-          <div>
-            <p className=' mb-4 md:mt-0 mt-14'>Term of Use </p>
-
-          </div>
-        </div>
         <hr className='mb-8 mt-8 newLine ' />
-        <p className='copy mb-6'>Copyright Pereview 2023</p>
+
+        <div className='flex justify-around footerItem'>
+          <p className='mr-1 ml-1'>About us</p>
+          <p className='mr-1 ml-1'>Features</p>
+          <p className='mr-1 ml-1'>Terms of use</p>
+          <p className='mr-1 ml-1'>Privacy Policy</p>
+
+        </div>
+       
+        <p className=' mt-4 mb-4 right'>&#169; 2023 Pereview All right reserved</p>
       </div>
     </div>
   )
