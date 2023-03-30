@@ -7,19 +7,19 @@ export default function Footer() {
       <div className='footer '>
         <div className='grid md:grid-cols-3 lg:grid-cols-4 justify-between footerItem '>
           <div>
-            <p className='text-2xl mb-4 md:mt-0 mt-14'>About us</p>
+            <p className=' mb-4 md:mt-0 mt-14'>About us</p>
 
           </div>
           <div>
-            <p className='text-2xl mb-4 md:mt-0 mt-14'>Features</p>
+            <p className=' mb-4 md:mt-0 mt-14'>Features</p>
 
           </div>
           <div>
-            <p className='text-2xl mb-4 md:mt-0 mt-14'>Privacy Policy </p>
+            <p className=' mb-4 md:mt-0 mt-14'>Privacy Policy </p>
 
           </div>
           <div>
-            <p className='text-2xl mb-4 md:mt-0 mt-14'>Term of Use </p>
+            <p className=' mb-4 md:mt-0 mt-14'>Term of Use </p>
 
           </div>
         </div>
