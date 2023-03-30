@@ -24,7 +24,7 @@ export default function Footer() {
           </div>
         </div>
         <hr className='mb-8 mt-8 newLine ' />
-        <p className='copy'>Copyright Pereview 2023</p>
+        <p className='copy mb-6'>Copyright Pereview 2023</p>
       </div>
     </div>
   )
