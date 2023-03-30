@@ -185,7 +185,7 @@
 
 .feature_head {
     color: dodgerblue;
-    font-size: 23px;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -277,9 +277,7 @@
 .footer {
     margin-top: 150px;
 }
-.loogo{
-    
-}
+
 .footerItem {
    text-align: center;
 }
@@ -333,7 +331,11 @@
 
 @media only screen and (min-width: 768px) {
 
-
+    .feature_head {
+        color: dodgerblue;
+        font-size: 17px;
+        font-weight: 600;
+    }
 
     .arrow {
         transform: rotate(90deg);
@@ -678,14 +680,15 @@
 }
 
 @media only screen and (max-width: 425px) {
+    .feature_head {
+        color: dodgerblue;
+        font-size: 16px;
+        font-weight: 600;
+    }
     .star{
         height: 20px !important;
     }
-    .feature_head {
-        color: dodgerblue;
-        font-size: 20px;
-        font-weight: 600;
-    }
+   
     .account_btn{
         margin-top: 2px !important;
     }
