@@ -429,13 +429,13 @@ export default function Landingpage() {
 
             <div className='flex  banner_button'>
 
-              <div className='head_btn  '>
+              <div className='head_btn  ban_btn '>
                 <button className='cta_button deploy_btn1 flex justify-center'>
                   <p className='word'>Get started</p>
-                  <img className='arrow ml-2 ' src='./arrow.png' />
+                  <img className='arrow ml-2 ' src="https://img.icons8.com/ios-filled/50/null/long-arrow-up.png"/>
                 </button>
               </div>
-              <div className='head_btn = '>
+              <div className='head_btn ban_btn '>
                 <button className='cta_button deploy_btn2 flex justify-center'>
                   <p className='word'>Features</p>
                   <img className='arrow ml-2 ' src='./arrow.png' />

@@ -27,11 +27,13 @@ export default function Header() {
         <div className='header_links flex justify-between'>
           <div className='flex'>
             <img className='logo' src='./logo.png' />
-            <p className='mt-6 ml-14'>About</p>
-            <p className='mt-6 ml-10'>Features</p>
-            <p className='mt-6 ml-10'>Blogs</p>
-            <p className='mt-6 ml-10'>Pricing</p>
+            
+
           </div>
+          <div className='flex'>
+              <p className='mt-6 ml-14'>About</p>
+              <p className='mt-6 ml-10'>Features</p>
+            </div>
           <div className='flex '>
             <p className='mt-6  mr-6'>Login</p>
             <div className='head_btn'>
@@ -73,39 +75,15 @@ export default function Header() {
               <motion.p
                 initial={{ opacity: 0, scale: 0.8, y: 0 }}
                 animate={{ opacity: 1, scale: 1, y: 18 }}
-                transition={{ delay: 0.2}}
+                transition={{ delay: 0.2 }}
                 className='mt-6'
               >
                 Features
               </motion.p>
-              <motion.p
-                initial={{ opacity: 0, scale: 0.8, y: 0 }}
-                animate={{ opacity: 1, scale: 1, y: 18 }}
-                transition={{ delay: 0.3 }}
-                className='mt-6'
-              >
-                Blogs
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, scale: 0.8, y: 0 }}
-                animate={{ opacity: 1, scale: 1, y: 18 }}
-                transition={{ delay: 0.4 }}
-                className='mt-6'
-              >
-                Pricing
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, scale: 0.8, y: 0 }}
-                animate={{ opacity: 1, scale: 1, y: 18 }}
-                transition={{ delay: 0.5 }}
-                className='mt-6'
-              >
-                Login
-              </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8, y: 0 }}
                 animate={{ opacity: 1, scale: 1, y: 18 }}
-                transition={{ delay: 0.6}}
+                transition={{ delay: 0.4 }}
                 className='head_btn mt-6'>
                 <button className='cta_button  flex justify-center'>
                   <p className=' word '>Get started</p>

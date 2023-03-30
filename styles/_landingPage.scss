@@ -71,6 +71,9 @@
 .head_btn {
     margin-top: 18px;
 }
+.ban_btn{
+    margin-top: 33px !important;
+}
 
 .arrow {
     transform: rotate(90deg);
@@ -229,7 +232,7 @@
 
 .ban {
     height: 250px;
-    background-color: rgb(12, 12, 92);
+    background-color: rgb(23, 25, 48);
     margin-top: 150px;
     color: white;
 
@@ -240,13 +243,15 @@
 }
 
 .deploy_btn2 {
-    background-color: rgb(12, 12, 92);
+    background-color: rgb(23, 25, 48);
     border: 1px solid white;
     margin-left: 50px;
 }
 
 .deploy_btn1 {
-    background-color: blue;
+    color: black;
+    background-color: white;
+
     border: 1px solid white;
 }
 
@@ -504,7 +509,6 @@
     }
 
     .banner_button {
-        margin-top: 10px;
 
     }
 

@@ -41,6 +41,14 @@
     font-size: 17px;
   }
 }
+.newLine {
+  border: 1px solid black;
+}
+
+.copy {
+  text-align: center;
+}
+
 * {
   margin: 0;
   border: 0;
@@ -107,6 +115,10 @@
 
 .head_btn {
   margin-top: 18px;
+}
+
+.ban_btn {
+  margin-top: 33px !important;
 }
 
 .arrow {
@@ -255,7 +267,7 @@
 
 .ban {
   height: 250px;
-  background-color: rgb(12, 12, 92);
+  background-color: rgb(23, 25, 48);
   margin-top: 150px;
   color: white;
 }
@@ -265,13 +277,14 @@
 }
 
 .deploy_btn2 {
-  background-color: rgb(12, 12, 92);
+  background-color: rgb(23, 25, 48);
   border: 1px solid white;
   margin-left: 50px;
 }
 
 .deploy_btn1 {
-  background-color: blue;
+  color: black;
+  background-color: white;
   border: 1px solid white;
 }
 
@@ -484,9 +497,6 @@
   }
   .story_head {
     margin-top: 50px;
-  }
-  .banner_button {
-    margin-top: 10px;
   }
   .footerbtn {
     background-color: royalblue !important;
