@@ -7,10 +7,13 @@ import { Grid, Box, Flex, Text, VStack, Divider, GridItem } from "@chakra-ui/lay
 import { Image } from "@chakra-ui/image";
 
 export default function Landingpage() {
-
+  const handleScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    section.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <div className='landingPage'>
-      <Header />
+      <Header onMenuItemClick={handleScrollToSection} />
 
       {/* HERO SECTION */}
       <div className='hero_section flex justify-between'>
@@ -50,7 +53,7 @@ export default function Landingpage() {
       </div>
 
       {/* FEATURES */}
-      <div className='features_content '>
+      <div id="div1" className='features_content '>
         <motion.div initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -129,7 +132,7 @@ export default function Landingpage() {
 
       {/* VISUAL */}
 
-      <div className='grid grid-cols-1 md:grid-cols-2 visusal'>
+      <div id="div2" className='grid grid-cols-1 md:grid-cols-2 visusal'>
         <motion.Box
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -373,7 +376,7 @@ export default function Landingpage() {
 
       </div>
 
-    
+
       {/* BANNER */}
       <Box className='ban'>
         <Box className='banna'>

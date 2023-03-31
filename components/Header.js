@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { Box, Flex, Link, Button } from '@chakra-ui/react';
 
 
-export default function Header() {
+export default function Header(props) {
 
   const [ham, setHam] = useState(true);
   const [showMenu, setShowMenu] = useState(false);
@@ -21,28 +21,20 @@ export default function Header() {
     }
   };
 
-  const div1Ref = useRef(null);
-  const div2Ref = useRef(null);
-  const handleScrollToDiv1 = () => {
-    div1Ref.current.scrollIntoView({ behavior: "smooth" });
-  };
-
-  const handleScrollToDiv2 = () => {
-    div2Ref.current.scrollIntoView({ behavior: "smooth" });
+  const handleMenuItemClick = (sectionId) => {
+    props.onMenuItemClick(sectionId);
   };
 
   return (
-    <div>
+    <div className='headd'>
       <Box className='header'>
         <Flex className='header_links' justify='space-between'>
           <Flex>
             <p className='loogo mt-6'>PEREVIEW</p>
           </Flex>
           <Flex>
-            <Link href='#' onClick={handleScrollToDiv1} className='mt-6 ml-10'>
-              <p>Features</p>
-            </Link>
-            <p className='mt-6 ml-14'>About</p>
+            <p onClick={() => handleMenuItemClick("div1")} className='mt-6 ml-14'>Features</p>
+            <p onClick={() => handleMenuItemClick("div2")} className='mt-6 ml-14'>About</p>
           </Flex>
           <Flex>
             <p className='mt-6  mr-6'>Login</p>
@@ -79,7 +71,7 @@ export default function Header() {
                 animate={{ opacity: 1, scale: 1, y: 18 }}
                 transition={{ delay: 0.2 }}
                 className='mt-6'
-              >
+                onClick={() => handleMenuItemClick("div1")} >
                 Features
               </motion.p>
               <motion.p
@@ -87,7 +79,8 @@ export default function Header() {
                 animate={{ opacity: 1, scale: 1, y: 20 }}
                 transition={{ delay: 0.1 }}
                 className='mt-6'
-              >
+                onClick={() => handleMenuItemClick("div2")}
+                   >
                 About
               </motion.p>
               <motion.div
