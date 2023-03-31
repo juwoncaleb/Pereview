@@ -7,8 +7,8 @@
 @tailwind components;
 @tailwind utilities;
 .nav_mob {
-  margin-left: 5%;
-  margin-right: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: right;
 }
 
@@ -35,6 +35,11 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .nav_mob {
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: right;
+  }
   .header_links {
     margin-left: 7%;
     margin-right: 4%;
