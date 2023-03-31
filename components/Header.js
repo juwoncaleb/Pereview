@@ -94,7 +94,7 @@ export default function Header(props) {
                   <Flex className='head_btn '>
                     <button className='cta_button  flex justify-center'>
                       <p className='word'>Get started</p>
-                      <Image ml={2} className='arrow ml-2 ' src='./arrow.png' />
+                      <Image ml={2} className='arrow ' src='./arrow.png' />
                     </button>
                   </Flex>
                 </Flex>

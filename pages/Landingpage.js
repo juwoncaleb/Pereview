@@ -16,43 +16,46 @@ export default function Landingpage() {
       <Header onMenuItemClick={handleScrollToSection} />
 
       {/* HERO SECTION */}
-      <Flex justifyContent="space-between" className='hero_section'>
-        <motion.div mr={6}
+      <div className='hero_section flex justify-between'>
+        <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className='hero_text '>
-          <VStack align="start" spacing={6}>
-            <Text mb={6} className='hero_head_text '>Acclerate Product Development with Peer Feedback</Text>
-            <div className='head_sub_text'>
-              <Text>Collaborate with other product managers to gather valuable feedback and receive seamless peer reviews on surveys for data-driven decision making during product development.</Text>
-            </div>
-            <Flex className='cta'>
-              <Flex   className='head_btn '>
+          className='hero_text mr-6'
+        >
+          <Text className='hero_head_text mb-6'>Accelerate Product Development with Peer Feedback</Text>
+          <div className='head_sub_text'>
+            <p className=''>
+              Collaborate with other product managers to gather valuable feedback and receive seamless peer reviews on surveys for data-driven decision making during product development.
+            </p>
+          </div>
+          <Flex mt={14} className='cta'>
+            <Box >
+              <Flex className='head_btn '>
                 <button className='cta_button  flex justify-center'>
                   <p className='word'>Get started</p>
-                  <Image ml={2} className='arrow ml-2 ' src='./arrow.png' />
+                  <Image ml={2} className='arrow ' src='./arrow.png' />
                 </button>
               </Flex>
-             
-              <Flex ml={8} mt={2} align="center">
-                <Image src="https://img.icons8.com/office/40/null/wallet.png" alt="Wallet icon" />
-                <Text className='credit mt-4 ml-4'> No Credit Card Required</Text>
-              </Flex>
+            </Box>
+            <Flex ml={8} justify='space-between' align='center'>
+              <Image className='wallet mt-2' src='https://img.icons8.com/office/40/null/wallet.png' />
+              <Text className='credit   ml-4'> No Credit Card Required</Text>
             </Flex>
-          </VStack>
+          </Flex>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, y: 35 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
-            type: 'easein', duration: 1
+            type: 'easein',
+            duration: 1
           }}
-          className='hero_img flex'>
+          className='hero_img flex'
+        >
           <Image className='hero1' src='./hero2.png' />
         </motion.div>
-      </Flex>
-
+      </div>
       {/* FEATURES */}
       <div id="div1" className='features_content '>
         <motion.div initial={{ opacity: 0, y: 30 }}
