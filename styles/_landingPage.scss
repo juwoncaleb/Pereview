@@ -7,8 +7,13 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    scroll-behavior: smooth;
+}
+
 .landingPage {
     font-family: Archivo;
+
 
 }
 
@@ -278,11 +283,13 @@
 .footer {
     margin-top: 150px;
 }
-.right{
+
+.right {
     text-align: center;
     font-size: 12px;
     color: gray;
 }
+
 .footerItem {
     width: 320px;
     margin-left: auto;
@@ -293,7 +300,7 @@
 .testimonial {
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .step2 {

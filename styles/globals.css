@@ -62,6 +62,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+html {
+  scroll-behavior: smooth;
+}
+
 .landingPage {
   font-family: Archivo;
 }
@@ -330,7 +334,7 @@
 .testimonial {
   margin-left: 10%;
   margin-right: 10%;
-  margin-top: 300px;
+  margin-top: 200px;
 }
 
 .step2 {

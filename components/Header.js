@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { motion, stagger } from "framer-motion"
+import { useRef } from "react";
+import { Box, Flex, Link, Button } from '@chakra-ui/react';
 
 
 export default function Header() {
@@ -19,32 +21,42 @@ export default function Header() {
     }
   };
 
+  const div1Ref = useRef(null);
+  const div2Ref = useRef(null);
+  const handleScrollToDiv1 = () => {
+    div1Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
+  const handleScrollToDiv2 = () => {
+    div2Ref.current.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <div>
-      <div className='header'>
-        <div className='header_links flex justify-between'>
-          <div className='flex'>
-          <p className='loogo mt-6'>PEREVIEW</p>
-          </div>
-          <div className='flex'>
-              <p className='mt-6 ml-14'>About</p>
-              <p className='mt-6 ml-10'>Features</p>
-            </div>
-          <div className='flex '>
+      <Box className='header'>
+        <Flex className='header_links' justify='space-between'>
+          <Flex>
+            <p className='loogo mt-6'>PEREVIEW</p>
+          </Flex>
+          <Flex>
+            <Link href='#' onClick={handleScrollToDiv1} className='mt-6 ml-10'>
+              <p>Features</p>
+            </Link>
+            <p className='mt-6 ml-14'>About</p>
+          </Flex>
+          <Flex>
             <p className='mt-6  mr-6'>Login</p>
-            <div className='head_btn'>
+            <div className='head_btn '>
               <button className='cta_button  flex justify-center'>
                 <p className='word'>Get started</p>
                 <img className='arrow ml-2 ' src='./arrow.png' />
               </button>
             </div>
-          </div>
-        </div>
-      </div>
+          </Flex>
+        </Flex>
+      </Box>
       <div className='nav_mob flex justify-between'>
-      <p className='loogo mt-6'>PEREVIEW</p>
+        <p className='loogo mt-6'>PEREVIEW</p>
         <motion.nav
 
         >
@@ -64,19 +76,19 @@ export default function Header() {
             <motion.div className='menu'>
               <motion.p
                 initial={{ opacity: 0, scale: 0.8, y: 0 }}
-                animate={{ opacity: 1, scale: 1, y: 20 }}
-                transition={{ delay: 0.1 }}
-                className='mt-6'
-              >
-                About
-              </motion.p>
-              <motion.p
-                initial={{ opacity: 0, scale: 0.8, y: 0 }}
                 animate={{ opacity: 1, scale: 1, y: 18 }}
                 transition={{ delay: 0.2 }}
                 className='mt-6'
               >
                 Features
+              </motion.p>
+              <motion.p
+                initial={{ opacity: 0, scale: 0.8, y: 0 }}
+                animate={{ opacity: 1, scale: 1, y: 20 }}
+                transition={{ delay: 0.1 }}
+                className='mt-6'
+              >
+                About
               </motion.p>
               <motion.div
                 initial={{ opacity: 0, scale: 0.8, y: 0 }}
