@@ -16,24 +16,25 @@ export default function Landingpage() {
       <Header onMenuItemClick={handleScrollToSection} />
 
       {/* HERO SECTION */}
-      <div className='hero_section flex justify-between'>
-        <motion.div
+      <Flex justifyContent="space-between" className='hero_section'>
+        <motion.div mr={6}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className='hero_text mr-6'>
+          className='hero_text '>
           <VStack align="start" spacing={6}>
-            <Text className='hero_head_text mb-6'>Accelerate Product Development with Peer Feedback</Text>
+            <Text mb={6} className='hero_head_text '>Acclerate Product Development with Peer Feedback</Text>
             <div className='head_sub_text'>
               <Text>Collaborate with other product managers to gather valuable feedback and receive seamless peer reviews on surveys for data-driven decision making during product development.</Text>
             </div>
             <Flex className='cta'>
-              <div className='head_btn '>
+              <Flex   className='head_btn '>
                 <button className='cta_button  flex justify-center'>
                   <p className='word'>Get started</p>
-                  <img className='arrow ml-2 ' src='./arrow.png' />
+                  <Image ml={2} className='arrow ml-2 ' src='./arrow.png' />
                 </button>
-              </div>
+              </Flex>
+             
               <Flex ml={8} mt={2} align="center">
                 <Image src="https://img.icons8.com/office/40/null/wallet.png" alt="Wallet icon" />
                 <Text className='credit mt-4 ml-4'> No Credit Card Required</Text>
@@ -50,7 +51,7 @@ export default function Landingpage() {
           className='hero_img flex'>
           <Image className='hero1' src='./hero2.png' />
         </motion.div>
-      </div>
+      </Flex>
 
       {/* FEATURES */}
       <div id="div1" className='features_content '>
@@ -60,13 +61,13 @@ export default function Landingpage() {
             type: 'spring', stiffness: 100, damping: 10, duration
               : 0.5
           }}>
-         <Flex>
-                <svg className='star' width="30" height="20" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M10.6644 0.96544L12.7261 5.10874C12.878 5.40893 13.1679 5.61739 13.5023 5.66371L18.1334 6.3382C18.4039 6.37619 18.6493 6.51887 18.8151 6.7366C18.9791 6.95154 19.0495 7.22394 19.0096 7.49169C18.9772 7.71405 18.8726 7.91974 18.7123 8.07724L15.3566 11.3302C15.1112 11.5572 15 11.8935 15.0593 12.2224L15.8855 16.7956C15.9735 17.3478 15.6076 17.8685 15.0593 17.9732C14.8333 18.0093 14.6017 17.9713 14.398 17.8675L10.267 15.7153C9.96042 15.5606 9.59827 15.5606 9.29169 15.7153L5.16072 17.8675C4.65315 18.1372 4.02424 17.9537 3.74174 17.4534C3.63708 17.2542 3.60003 17.0272 3.6343 16.8058L4.46049 12.2317C4.51977 11.9037 4.4077 11.5655 4.16317 11.3385L0.807457 8.08743C0.408253 7.70201 0.396212 7.06736 0.780596 6.66804C0.788932 6.6597 0.798194 6.65043 0.807457 6.64117C0.966767 6.47903 1.17609 6.37619 1.40209 6.34932L6.03322 5.6739C6.36666 5.62665 6.65657 5.42004 6.8094 5.11801L8.79708 0.96544C8.97399 0.609665 9.34078 0.388232 9.73905 0.397497H9.86317C10.2086 0.439189 10.5097 0.65321 10.6644 0.96544" fill="#408BFC" />
-                  <path d="M9.75287 15.5999C9.5735 15.6055 9.39875 15.6537 9.24157 15.7399L5.1308 17.8872C4.62782 18.1273 4.02591 17.941 3.7439 17.46C3.63942 17.2635 3.60152 17.0383 3.63665 16.8177L4.45769 12.2533C4.51317 11.9215 4.40222 11.5841 4.1609 11.3506L0.803679 8.10035C0.405177 7.71017 0.39778 7.06976 0.787961 6.67032C0.793508 6.66476 0.798131 6.66012 0.803679 6.65549C0.96271 6.49794 1.16797 6.39414 1.38895 6.3617L6.02397 5.67958C6.3596 5.63695 6.65084 5.4275 6.79878 5.12351L8.81348 0.91868C9.00487 0.579476 9.37194 0.377436 9.76027 0.398752C9.75287 0.674008 9.75287 15.4127 9.75287 15.5999" fill="#408BFC" />
-                </svg>
-                <Text ml={4} className=' feature_head'>OUR STORY</Text>
-              </Flex>
+          <Flex>
+            <svg className='star' width="30" height="20" viewBox="0 0 20 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M10.6644 0.96544L12.7261 5.10874C12.878 5.40893 13.1679 5.61739 13.5023 5.66371L18.1334 6.3382C18.4039 6.37619 18.6493 6.51887 18.8151 6.7366C18.9791 6.95154 19.0495 7.22394 19.0096 7.49169C18.9772 7.71405 18.8726 7.91974 18.7123 8.07724L15.3566 11.3302C15.1112 11.5572 15 11.8935 15.0593 12.2224L15.8855 16.7956C15.9735 17.3478 15.6076 17.8685 15.0593 17.9732C14.8333 18.0093 14.6017 17.9713 14.398 17.8675L10.267 15.7153C9.96042 15.5606 9.59827 15.5606 9.29169 15.7153L5.16072 17.8675C4.65315 18.1372 4.02424 17.9537 3.74174 17.4534C3.63708 17.2542 3.60003 17.0272 3.6343 16.8058L4.46049 12.2317C4.51977 11.9037 4.4077 11.5655 4.16317 11.3385L0.807457 8.08743C0.408253 7.70201 0.396212 7.06736 0.780596 6.66804C0.788932 6.6597 0.798194 6.65043 0.807457 6.64117C0.966767 6.47903 1.17609 6.37619 1.40209 6.34932L6.03322 5.6739C6.36666 5.62665 6.65657 5.42004 6.8094 5.11801L8.79708 0.96544C8.97399 0.609665 9.34078 0.388232 9.73905 0.397497H9.86317C10.2086 0.439189 10.5097 0.65321 10.6644 0.96544" fill="#408BFC" />
+              <path d="M9.75287 15.5999C9.5735 15.6055 9.39875 15.6537 9.24157 15.7399L5.1308 17.8872C4.62782 18.1273 4.02591 17.941 3.7439 17.46C3.63942 17.2635 3.60152 17.0383 3.63665 16.8177L4.45769 12.2533C4.51317 11.9215 4.40222 11.5841 4.1609 11.3506L0.803679 8.10035C0.405177 7.71017 0.39778 7.06976 0.787961 6.67032C0.793508 6.66476 0.798131 6.66012 0.803679 6.65549C0.96271 6.49794 1.16797 6.39414 1.38895 6.3617L6.02397 5.67958C6.3596 5.63695 6.65084 5.4275 6.79878 5.12351L8.81348 0.91868C9.00487 0.579476 9.37194 0.377436 9.76027 0.398752C9.75287 0.674008 9.75287 15.4127 9.75287 15.5999" fill="#408BFC" />
+            </svg>
+            <Text ml={4} className=' feature_head'>OUR STORY</Text>
+          </Flex>
           <Box mt={4}>
             <Text className='story'>Finding participants for product</Text>
             <Text className='story'>interviews is hard</Text>
@@ -142,9 +143,9 @@ export default function Landingpage() {
           }}
           className='visaul_card'
         >
-          <Text className='rev mt-20 cons'>Get constructive peer reviews </Text>
+          <Text mt={20} className='rev cons'>Get constructive peer reviews </Text>
           <Text className='rev'> for reliable user feedback.</Text>
-          <Divider className='line mt-6 mb-6' />
+          <Divider mt={6} mb={6} className='line' />
           <Flex>
             <Image className='people' src="https://img.icons8.com/clouds/100/null/crowd--v1.png" />
             <Box ml='4'>
@@ -189,16 +190,16 @@ export default function Landingpage() {
           }}
           className='visaul_card mt-14'
         >
-          <Text className='rev mt-20'>Boost productivity </Text>
+          <Text mt={20} className='rev '>Boost productivity </Text>
           <Text className='rev'> Ship with more confidence.</Text>
-          <Divider className='line mt-6 mb-6' />
+          <Divider mt={6} mb={6} className='line ' />
           <Grid className='stats md:flex'>
             <Box mr='14' className='deplo'>
-              <Text className='mt-10'>2.8 <span className='uni'>x</span> </Text>
+              <Text mt={10} >2.8 <span className='uni'>x</span> </Text>
               <Text>Deployment</Text>
             </Box>
             <Box className='deplo'>
-              <Text className='mt-10'>68<span className='uni'>%</span> </Text>
+              <Text mt={10}>68<span className='uni'>%</span> </Text>
               <Text>User experience</Text>
             </Box>
           </Grid>
@@ -232,7 +233,7 @@ export default function Landingpage() {
             <div className='head_btn '>
               <button className='cta_button  flex justify-center'>
                 <p className='word'>Get started</p>
-                <img className='arrow ml-2 ' src='./arrow.png' />
+                <Image ml={2} className='arrow  ' src='./arrow.png' />
               </button>
             </div>
 
@@ -273,7 +274,7 @@ export default function Landingpage() {
                     : 1.5
                 }} className='feat'>
                 <Text className='countdown'>3</Text>
-                <Text className='feature_header mb-6'>Compare reviews</Text>
+                <Text className='feature_header ' mb={6}>Compare reviews</Text>
                 <Text>Aute ullamco dolor mollit culpa occaecat lab exercitation inconsequat aute enim fugiat dolor aliquip aute deserunt do.</Text>
               </motion.div>
             </GridItem>
@@ -386,12 +387,12 @@ export default function Landingpage() {
             transition={{ type: 'spring', stiffness: 100, damping: 10, duration: 0.5 }}
             className='md:flex justify-between banner_item grid'
           >
-            <Box className='mt-4 story_head'>
+            <Box mt={4} className='story_head'>
               <Text className='story'>GET PRODUCT REVIEW FASTER</Text>
               <Text className='story'>BEFORE DEPLOYMENT</Text>
             </Box>
 
-            <Box className='flex banner_button'>
+            <Flex className=' banner_button'>
               <Box className='head_btn ban_btn'>
                 <div className='head_btn '>
                   <button className='cta_button deploy_btn1 flex justify-center'>
@@ -400,7 +401,7 @@ export default function Landingpage() {
                   </button>
                 </div>
               </Box>
-            </Box>
+            </Flex>
           </motion.Box>
         </Box>
       </Box>

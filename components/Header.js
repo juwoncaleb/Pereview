@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { motion, stagger } from "framer-motion"
 import { useRef } from "react";
-import { Box, Flex, Link, Button } from '@chakra-ui/react';
+import { Box, Flex, Link, Button, Text, Image } from '@chakra-ui/react';
 
 
 export default function Header(props) {
@@ -30,20 +30,22 @@ export default function Header(props) {
       <Box className='header'>
         <Flex className='header_links' justify='space-between'>
           <Flex>
-            <p className='loogo mt-6'>PEREVIEW</p>
+            <Text className='loogo' mt={6}>PEREVIEW</Text>
           </Flex>
           <Flex>
             <p onClick={() => handleMenuItemClick("div1")} className='mt-6 ml-14'>Features</p>
             <p onClick={() => handleMenuItemClick("div2")} className='mt-6 ml-14'>About</p>
           </Flex>
           <Flex>
-            <p className='mt-6  mr-6'>Login</p>
-            <div className='head_btn '>
-              <button className='cta_button  flex justify-center'>
-                <p className='word'>Get started</p>
-                <img className='arrow ml-2 ' src='./arrow.png' />
-              </button>
-            </div>
+            <Text mt={6} mr={6} >Login</Text>
+            <Flex className='cta'>
+              <Flex className='head_btn '>
+                <button className='cta_button  flex justify-center'>
+                  <p className='word'>Get started</p>
+                  <Image ml={2} className='arrow ml-2 ' src='./arrow.png' />
+                </button>
+              </Flex>
+            </Flex>
           </Flex>
         </Flex>
       </Box>
@@ -80,7 +82,7 @@ export default function Header(props) {
                 transition={{ delay: 0.1 }}
                 className='mt-6'
                 onClick={() => handleMenuItemClick("div2")}
-                   >
+              >
                 About
               </motion.p>
               <motion.div
@@ -88,10 +90,14 @@ export default function Header(props) {
                 animate={{ opacity: 1, scale: 1, y: 18 }}
                 transition={{ delay: 0.4 }}
                 className='head_btn mt-6'>
-                <button className='cta_button  flex justify-center'>
-                  <p className=' word '>Get started</p>
-                  <img className='arrow ml-2 ' src='./arrow.png' />
-                </button>
+                <Flex className='cta'>
+                  <Flex className='head_btn '>
+                    <button className='cta_button  flex justify-center'>
+                      <p className='word'>Get started</p>
+                      <Image ml={2} className='arrow ml-2 ' src='./arrow.png' />
+                    </button>
+                  </Flex>
+                </Flex>
               </motion.div>
             </motion.div>
 
