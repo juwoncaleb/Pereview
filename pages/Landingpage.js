@@ -406,7 +406,7 @@ export default function Landingpage() {
       </Box>
 
       {/* FOOTER */}
-      <Footer />
+      <Footer onMenuItemClick={handleScrollToSection} />
     </div>
   )
 }
