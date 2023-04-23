@@ -9,7 +9,8 @@ module.exports = nextConfig
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 module.exports = {
   webpack: (config, { isServer }) => {
-    if (!isServer) {
+    if (!isServer) { 
+      
       // Use mini-css-extract-plugin on the client-side only
       config.plugins.push(new MiniCssExtractPlugin({
         filename: 'static/css/[contenthash].css',
